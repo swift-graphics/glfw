@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "../glm", .revision("ba6583e00c619841579fb77a1e8d6074dc632485"))
+        .package(url: "../glm", .revision("b7f9cfe44f18daa9b24296ea5841156211031539"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

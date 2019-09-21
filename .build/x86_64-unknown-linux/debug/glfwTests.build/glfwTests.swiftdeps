@@ -72,4 +72,4 @@ depends-external:
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/XCTest.swiftmodule"
 - "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
-interface-hash: "68a9078451b6e4191b6c609b2e3183e5"
+interface-hash: "4c629f202a9fdc8a90f3b8bc77a31b08"

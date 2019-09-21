@@ -10,27 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3cfed4-4775-47ef-99bc-ffe715ffdaa5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.build/build.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/build.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/checkouts/glm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/checkouts/glm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/dependencies-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.build/dependencies-state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/manifest.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/manifest.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/checkouts-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.build/repositories/checkouts-state.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/HEAD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/description" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/applypatch-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/commit-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/fsmonitor-watchman.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/post-update.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/pre-applypatch.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/pre-commit.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/pre-push.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/pre-rebase.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/pre-receive.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/prepare-commit-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/hooks/update.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/info/exclude" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/objects/pack/pack-8a7f6d67a2331fac3a0dc2babd40d500ebf2b466.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/objects/pack/pack-8a7f6d67a2331fac3a0dc2babd40d500ebf2b466.pack" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/repositories/glm-74dff42d/packed-refs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Package.resolved" beforeDir="false" afterPath="$PROJECT_DIR$/Package.resolved" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Package.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Package.swift" afterDir="false" />
@@ -118,7 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569076261015</updated>
-      <workItem from="1569076262113" duration="3057000" />
+      <workItem from="1569076262113" duration="3522000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1569080830017</created>
@@ -127,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569080830017</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="up">
+      <created>1569082012632</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569082012632</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,9 +164,9 @@
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state x="160" y="368" width="1054" height="737" key="SettingsEditor/70.27.2490.1413@70.27.2490.1413" timestamp="1569076682750" />
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569080849029">
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569082022174">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569080849029" />
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569082022174" />
   </component>
 </project>
