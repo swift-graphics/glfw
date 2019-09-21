@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "glm",
-        "repositoryURL": "https://github.com/swift-graphics/glm.git",
+        "repositoryURL": "/home/elect/SwiftProjects/glm",
         "state": {
           "branch": null,
           "revision": "ba6583e00c619841579fb77a1e8d6074dc632485",
-          "version": "1.0.0"
+          "version": null
         }
       }
     ]

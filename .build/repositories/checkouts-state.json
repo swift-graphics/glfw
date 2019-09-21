@@ -1,1 +1,1 @@
-{"object": {"repositories": {"https://github.com/swift-graphics/glm.git": {"repositoryURL": "https://github.com/swift-graphics/glm.git", "status": "available", "subpath": "glm-74dff42d"}}}, "version": 1}
+{"object": {"repositories": {"/home/elect/SwiftProjects/glm": {"repositoryURL": "/home/elect/SwiftProjects/glm", "status": "available", "subpath": "glm-7349a958"}, "/home/elect/SwiftProjects/glm.git": {"repositoryURL": "/home/elect/SwiftProjects/glm.git", "status": "error", "subpath": "glm-29537879"}}}, "version": 1}
