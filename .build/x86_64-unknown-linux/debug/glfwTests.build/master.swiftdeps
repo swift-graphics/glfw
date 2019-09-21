@@ -1,0 +1,6 @@
+version: "Swift version 5.1-dev (LLVM b47beb8a70, Swift 279ca888b5)"
+options: "2b559bdda42284a89e6090da10434ab5"
+build_time: [1569080643, 91947651]
+inputs:
+  "/home/elect/SwiftProjects/glfw/Tests/glfwTests/XCTestManifests.swift": [1569076240, 554382373]
+  "/home/elect/SwiftProjects/glfw/Tests/glfwTests/glfwTests.swift": !dirty [1569080642, 939040642]

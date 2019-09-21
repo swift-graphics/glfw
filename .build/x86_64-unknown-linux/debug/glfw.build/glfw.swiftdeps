@@ -1,0 +1,22 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "glfw"
+provides-nominal:
+- "4glfwAAV"
+provides-member:
+- ["4glfwAAV", ""]
+depends-top-level:
+- "StringLiteralType"
+- "glfw"
+depends-member:
+- ["4glfwAAV", "init"]
+- ["4glfwAAV", "text"]
+depends-nominal:
+- "4glfwAAV"
+depends-dynamic-lookup:
+depends-external:
+- "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glm.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "e03d8df5b79f29d7ae4920e01b099b2d"

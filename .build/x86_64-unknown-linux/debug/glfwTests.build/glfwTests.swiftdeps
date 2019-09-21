@@ -1,0 +1,75 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "glfwTests"
+provides-nominal:
+- "9glfwTestsAAC"
+provides-member:
+- ["9glfwTestsAAC", ""]
+depends-top-level:
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "StringLiteralType"
+- !private "XCTAssertEqual"
+- "XCTestCase"
+- !private "glfw"
+- "glfwTests"
+- !private "vec2"
+depends-member:
+- !private ["6XCTest8ListableP", "XCTAssertEqual"]
+- ["6XCTest8ListableP", ""]
+- !private ["6XCTest8ListableP", "glfw"]
+- !private ["6XCTest8ListableP", "init"]
+- ["6XCTest8ListableP", "testExample"]
+- !private ["6XCTest8ListableP", "vec2"]
+- !private ["6XCTest24PerformanceMeterDelegateP", "XCTAssertEqual"]
+- ["6XCTest24PerformanceMeterDelegateP", ""]
+- !private ["6XCTest24PerformanceMeterDelegateP", "glfw"]
+- !private ["6XCTest24PerformanceMeterDelegateP", "init"]
+- ["6XCTest24PerformanceMeterDelegateP", "testExample"]
+- !private ["6XCTest24PerformanceMeterDelegateP", "vec2"]
+- !private ["6XCTest17XCTWaiterDelegateP", "XCTAssertEqual"]
+- ["6XCTest17XCTWaiterDelegateP", ""]
+- !private ["6XCTest17XCTWaiterDelegateP", "glfw"]
+- !private ["6XCTest17XCTWaiterDelegateP", "init"]
+- ["6XCTest17XCTWaiterDelegateP", "testExample"]
+- !private ["6XCTest17XCTWaiterDelegateP", "vec2"]
+- !private ["6XCTestAAC", "XCTAssertEqual"]
+- ["6XCTestAAC", "allTests"]
+- !private ["6XCTestAAC", "glfw"]
+- ["6XCTestAAC", "testExample"]
+- !private ["6XCTestAAC", "vec2"]
+- !private ["6XCTest0A4CaseC", "XCTAssertEqual"]
+- ["6XCTest0A4CaseC", ""]
+- ["6XCTest0A4CaseC", "allTests"]
+- !private ["6XCTest0A4CaseC", "glfw"]
+- ["6XCTest0A4CaseC", "init"]
+- ["6XCTest0A4CaseC", "testExample"]
+- !private ["6XCTest0A4CaseC", "vec2"]
+- !private ["4glfwAAV", "init"]
+- !private ["4glfwAAV", "text"]
+- !private ["9glfwTestsAAC", "XCTAssertEqual"]
+- ["9glfwTestsAAC", "allTests"]
+- !private ["9glfwTestsAAC", "glfw"]
+- ["9glfwTestsAAC", "init"]
+- ["9glfwTestsAAC", "testExample"]
+- !private ["9glfwTestsAAC", "vec2"]
+depends-nominal:
+- "6XCTest8ListableP"
+- "6XCTest24PerformanceMeterDelegateP"
+- "6XCTest17XCTWaiterDelegateP"
+- "6XCTestAAC"
+- "6XCTest0A4CaseC"
+- !private "4glfwAAV"
+- "9glfwTestsAAC"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glm.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/XCTest.swiftmodule"
+- "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw.swiftmodule"
+- "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "68a9078451b6e4191b6c609b2e3183e5"

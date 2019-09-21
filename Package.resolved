@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "glm",
+        "repositoryURL": "https://github.com/swift-graphics/glm.git",
+        "state": {
+          "branch": null,
+          "revision": "ba6583e00c619841579fb77a1e8d6074dc632485",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

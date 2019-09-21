@@ -1,0 +1,5 @@
+version: "Swift version 5.1-dev (LLVM b47beb8a70, Swift 279ca888b5)"
+options: "60cceeee8a6848cc57915c9ef110dd3b"
+build_time: [1569079948, 538943382]
+inputs:
+  "/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/typealias.swift": [1569076879, 106983281]
