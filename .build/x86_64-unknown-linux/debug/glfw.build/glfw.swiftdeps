@@ -1,6 +1,7 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "glfw"
+- "a"
 provides-nominal:
 - "4glfwAAV"
 provides-member:
@@ -8,6 +9,7 @@ provides-member:
 depends-top-level:
 - "StringLiteralType"
 - "glfw"
+- "vec2"
 depends-member:
 - ["4glfwAAV", "init"]
 - ["4glfwAAV", "text"]
@@ -19,4 +21,4 @@ depends-external:
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
-interface-hash: "e03d8df5b79f29d7ae4920e01b099b2d"
+interface-hash: "e13ef5d8d1f6ef9834b48a36e485a167"
