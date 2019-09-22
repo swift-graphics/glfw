@@ -1,5 +1,5 @@
 version: "Swift version 5.1-dev (LLVM b47beb8a70, Swift 279ca888b5)"
-options: "4132b25c117dddce1bdc5a60cca6364e"
-build_time: [1569083994, 615909989]
+options: "11e09c81e3c145b263961dee173420f0"
+build_time: [1569155199, 34082010]
 inputs:
-  "/home/elect/SwiftProjects/glfw/Sources/glfw/glfw.swift": !dirty [1569083994, 476674098]
+  "/home/elect/SwiftProjects/glfw/Sources/glfw/glfw.swift": [1569155198, 909410830]

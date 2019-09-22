@@ -1,0 +1,6 @@
+module glfwNative [system] {
+    header "glfw.h"
+    exclude header "/usr/include/GLFW/glfw3native.h"
+    link "glfw"
+    export *
+}

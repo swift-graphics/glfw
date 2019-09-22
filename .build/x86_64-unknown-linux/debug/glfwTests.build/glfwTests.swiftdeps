@@ -6,63 +6,62 @@ provides-nominal:
 provides-member:
 - ["9glfwTestsAAC", ""]
 depends-top-level:
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
 - "StringLiteralType"
-- !private "XCTAssertEqual"
 - "XCTestCase"
 - !private "glfw"
+- !private "glfwGetVersionString"
 - "glfwTests"
-- !private "vec2"
+- !private "print"
 depends-member:
-- !private ["6XCTest8ListableP", "XCTAssertEqual"]
 - ["6XCTest8ListableP", ""]
 - !private ["6XCTest8ListableP", "glfw"]
+- !private ["6XCTest8ListableP", "glfwGetVersionString"]
 - !private ["6XCTest8ListableP", "init"]
+- !private ["6XCTest8ListableP", "print"]
 - ["6XCTest8ListableP", "testExample"]
-- !private ["6XCTest8ListableP", "vec2"]
-- !private ["6XCTest24PerformanceMeterDelegateP", "XCTAssertEqual"]
 - ["6XCTest24PerformanceMeterDelegateP", ""]
 - !private ["6XCTest24PerformanceMeterDelegateP", "glfw"]
+- !private ["6XCTest24PerformanceMeterDelegateP", "glfwGetVersionString"]
 - !private ["6XCTest24PerformanceMeterDelegateP", "init"]
+- !private ["6XCTest24PerformanceMeterDelegateP", "print"]
 - ["6XCTest24PerformanceMeterDelegateP", "testExample"]
-- !private ["6XCTest24PerformanceMeterDelegateP", "vec2"]
-- !private ["6XCTest17XCTWaiterDelegateP", "XCTAssertEqual"]
 - ["6XCTest17XCTWaiterDelegateP", ""]
 - !private ["6XCTest17XCTWaiterDelegateP", "glfw"]
+- !private ["6XCTest17XCTWaiterDelegateP", "glfwGetVersionString"]
 - !private ["6XCTest17XCTWaiterDelegateP", "init"]
+- !private ["6XCTest17XCTWaiterDelegateP", "print"]
 - ["6XCTest17XCTWaiterDelegateP", "testExample"]
-- !private ["6XCTest17XCTWaiterDelegateP", "vec2"]
-- !private ["6XCTestAAC", "XCTAssertEqual"]
 - ["6XCTestAAC", "allTests"]
 - !private ["6XCTestAAC", "glfw"]
+- !private ["6XCTestAAC", "glfwGetVersionString"]
+- !private ["6XCTestAAC", "print"]
 - ["6XCTestAAC", "testExample"]
-- !private ["6XCTestAAC", "vec2"]
-- !private ["6XCTest0A4CaseC", "XCTAssertEqual"]
 - ["6XCTest0A4CaseC", ""]
 - ["6XCTest0A4CaseC", "allTests"]
 - !private ["6XCTest0A4CaseC", "glfw"]
+- !private ["6XCTest0A4CaseC", "glfwGetVersionString"]
 - ["6XCTest0A4CaseC", "init"]
+- !private ["6XCTest0A4CaseC", "print"]
 - ["6XCTest0A4CaseC", "testExample"]
-- !private ["6XCTest0A4CaseC", "vec2"]
-- !private ["4glfwAAV", "init"]
-- !private ["4glfwAAV", "text"]
-- !private ["9glfwTestsAAC", "XCTAssertEqual"]
+- !private ["5glfw_0A0C", "VERSION"]
+- !private ["5glfw_0A0C", "initialize"]
 - ["9glfwTestsAAC", "allTests"]
 - !private ["9glfwTestsAAC", "glfw"]
+- !private ["9glfwTestsAAC", "glfwGetVersionString"]
 - ["9glfwTestsAAC", "init"]
+- !private ["9glfwTestsAAC", "print"]
 - ["9glfwTestsAAC", "testExample"]
-- !private ["9glfwTestsAAC", "vec2"]
 depends-nominal:
 - "6XCTest8ListableP"
 - "6XCTest24PerformanceMeterDelegateP"
 - "6XCTest17XCTWaiterDelegateP"
 - "6XCTestAAC"
 - "6XCTest0A4CaseC"
-- !private "4glfwAAV"
+- !private "5glfw_0A0C"
 - "9glfwTestsAAC"
 depends-dynamic-lookup:
 depends-external:
+- "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
 - "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glm.swiftmodule"
@@ -70,6 +69,6 @@ depends-external:
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/XCTest.swiftmodule"
-- "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw.swiftmodule"
 - "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
-interface-hash: "4c629f202a9fdc8a90f3b8bc77a31b08"
+- "/home/elect/SwiftProjects/glfw/Sources/glfwNative/module.modulemap"
+interface-hash: "4994aca6f99b54097e3c7154d0270b5f"
