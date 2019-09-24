@@ -10,20 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3cfed4-4775-47ef-99bc-ffe715ffdaa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/glfw_/Monitor.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/build.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/build.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/checkouts/glm/Sources/glm/typealias.swift" beforeDir="false" afterPath="$PROJECT_DIR$/.build/checkouts/glm/Sources/glm/typealias.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/debug.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.build/debug.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/manifest.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/manifest.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swift.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/glfw_/glfw.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/glfw_/glfw.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/glfw_/util.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/glfw_/util.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/glfwTests/glfwTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/glfwTests/glfwTests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/glfw_/Monitor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/glfw_/Monitor.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569076261015</updated>
-      <workItem from="1569076262113" duration="53664000" />
+      <workItem from="1569076262113" duration="53954000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1569080830017</created>
@@ -154,7 +145,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569157117909</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="in progress 2">
+      <created>1569315493082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569315493082</updated>
+    </task>
+    <task id="LOCAL-00007" summary="in progress 3">
+      <created>1569315578892</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569315578892</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,27 +174,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="up" />
     <MESSAGE value="in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="in progress" />
+    <MESSAGE value="in progress 2" />
+    <MESSAGE value="in progress 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="in progress 3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1569315185954">
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1569315759591">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185954" />
-    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1569315185953">
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569315759591" />
+    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1569315759591">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185953" />
-    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1569315185953">
+    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569315759591" />
+    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1569315759591">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185953" />
-    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1569315185954">
+    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569315759591" />
+    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1569315759591">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185954" />
+    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569315759591" />
     <state x="160" y="368" width="1054" height="737" key="SettingsEditor" timestamp="1569076682750">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
@@ -198,10 +207,10 @@
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state width="498" height="446" key="SwitcherDM/70.27.2490.1413@70.27.2490.1413" timestamp="1569108748864" />
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569157119225">
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569315580367">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569157119225" />
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569315580367" />
     <state x="405" y="631" width="575" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1569108746450">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>

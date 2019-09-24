@@ -31,8 +31,8 @@ import glm
 */
 extension glfw.Monitor {
     var pos: ivec2 {
-        var x: Int32
-        var y: Int32
+        var x: Int32 = 0
+        var y: Int32 = 0
         glfwGetMonitorPos(self, &x, &y)
         return ivec2(x, y)
     }
