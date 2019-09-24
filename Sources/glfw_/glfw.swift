@@ -1,5 +1,7 @@
 import glm
 import glfwNative
+import Foundation
+import Dispatch
 
 /*************************************************************************
  * GLFW 3.2 - www.glfw.org
@@ -29,10 +31,10 @@ import glfwNative
  *
  *************************************************************************/
 
-public class glfw {
+public struct glfw {
 
-    private init() {
-    }
+//    private init() {
+//    }
 
     /*************************************************************************
      * GLFW API tokens
@@ -53,11 +55,11 @@ public class glfw {
      */
     static let VERSION_MINOR = 2
 
-    static var VERSION: String {
-        get {
-            "\(VERSION_MAJOR).\(VERSION_MINOR)"
-        }
-    }
+//    static var VERSION: String { TODO?
+//        get {
+//            "\(VERSION_MAJOR).\(VERSION_MINOR)"
+//        }
+//    }
 
     /*  @brief The revision number of the GLFW library.
      *
@@ -465,8 +467,7 @@ public class glfw {
      *
      *  @ingroup monitor
      */
-    struct Monitor {
-    }
+    typealias Monitor = OpaquePointer
 
     /*  @brief Opaque window object.
      *
@@ -508,7 +509,7 @@ public class glfw {
      *
      *  @ingroup init
      */
-    typealias errorFun = (Error, _ description: String) -> Void
+    typealias ErrorFun = (Error, _ description: String) -> Void
 
     /*  @brief The function signature for window position callbacks.
      *
@@ -977,185 +978,189 @@ public class glfw {
      *
      *  @ingroup init
      */
-//GLFWAPI void glfwGetVersion(int* major, int* minor, int* rev);
-//
-///*! @brief Returns a string describing the compile-time configuration.
-// *
-// *  This function returns the compile-time generated
-// *  [version string](@ref intro_version_string) of the GLFW library binary.  It
-// *  describes the version, platform, compiler and any platform-specific
-// *  compile-time options.  It should not be confused with the OpenGL or OpenGL
-// *  ES version string, queried with `glGetString`.
-// *
-// *  __Do not use the version string__ to parse the GLFW library version.  The
-// *  @ref glfwGetVersion function provides the version of the running library
-// *  binary in numerical format.
-// *
-// *  @return The ASCII encoded GLFW version string.
-// *
-// *  @errors None.
-// *
-// *  @remark This function may be called before @ref glfwInit.
-// *
-// *  @pointer_lifetime The returned string is static and compile-time generated.
-// *
-// *  @thread_safety This function may be called from any thread.
-// *
-// *  @sa @ref intro_version
-// *  @sa glfwGetVersion
-// *
-// *  @since Added in version 3.0.
-// *
-// *  @ingroup init
-// */
-//GLFWAPI const char* glfwGetVersionString(void);
-//
-///*! @brief Sets the error callback.
-// *
-// *  This function sets the error callback, which is called with an error code
-// *  and a human-readable description each time a GLFW error occurs.
-// *
-// *  The error callback is called on the thread where the error occurred.  If you
-// *  are using GLFW from multiple threads, your error callback needs to be
-// *  written accordingly.
-// *
-// *  Because the description string may have been generated specifically for that
-// *  error, it is not guaranteed to be valid after the callback has returned.  If
-// *  you wish to use it after the callback returns, you need to make a copy.
-// *
-// *  Once set, the error callback remains set even after the library has been
-// *  terminated.
-// *
-// *  @param[in] cbfun The new callback, or `NULL` to remove the currently set
-// *  callback.
-// *  @return The previously set callback, or `NULL` if no callback was set.
-// *
-// *  @errors None.
-// *
-// *  @remark This function may be called before @ref glfwInit.
-// *
-// *  @thread_safety This function must only be called from the main thread.
-// *
-// *  @sa @ref error_handling
-// *
-// *  @since Added in version 3.0.
-// *
-// *  @ingroup init
-// */
-//GLFWAPI GLFWerrorfun glfwSetErrorCallback(GLFWerrorfun cbfun);
-//
-///*! @brief Returns the currently connected monitors.
-// *
-// *  This function returns an array of handles for all currently connected
-// *  monitors.  The primary monitor is always first in the returned array.  If no
-// *  monitors were found, this function returns `NULL`.
-// *
-// *  @param[out] count Where to store the number of monitors in the returned
-// *  array.  This is set to zero if an error occurred.
-// *  @return An array of monitor handles, or `NULL` if no monitors were found or
-// *  if an [error](@ref error_handling) occurred.
-// *
-// *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
-// *
-// *  @pointer_lifetime The returned array is allocated and freed by GLFW.  You
-// *  should not free it yourself.  It is guaranteed to be valid only until the
-// *  monitor configuration changes or the library is terminated.
-// *
-// *  @thread_safety This function must only be called from the main thread.
-// *
-// *  @sa @ref monitor_monitors
-// *  @sa @ref monitor_event
-// *  @sa glfwGetPrimaryMonitor
-// *
-// *  @since Added in version 3.0.
-// *
-// *  @ingroup monitor
-// */
-//GLFWAPI GLFWmonitor** glfwGetMonitors(int* count);
-//
-///*! @brief Returns the primary monitor.
-// *
-// *  This function returns the primary monitor.  This is usually the monitor
-// *  where elements like the task bar or global menu bar are located.
-// *
-// *  @return The primary monitor, or `NULL` if no monitors were found or if an
-// *  [error](@ref error_handling) occurred.
-// *
-// *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
-// *
-// *  @thread_safety This function must only be called from the main thread.
-// *
-// *  @remark The primary monitor is always first in the array returned by @ref
-// *  glfwGetMonitors.
-// *
-// *  @sa @ref monitor_monitors
-// *  @sa glfwGetMonitors
-// *
-// *  @since Added in version 3.0.
-// *
-// *  @ingroup monitor
-// */
-//GLFWAPI GLFWmonitor* glfwGetPrimaryMonitor(void);
-//
-///*! @brief Returns the position of the monitor's viewport on the virtual screen.
-// *
-// *  This function returns the position, in screen coordinates, of the upper-left
-// *  corner of the specified monitor.
-// *
-// *  Any or all of the position arguments may be `NULL`.  If an error occurs, all
-// *  non-`NULL` position arguments will be set to zero.
-// *
-// *  @param[in] monitor The monitor to query.
-// *  @param[out] xpos Where to store the monitor x-coordinate, or `NULL`.
-// *  @param[out] ypos Where to store the monitor y-coordinate, or `NULL`.
-// *
-// *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED and @ref
-// *  GLFW_PLATFORM_ERROR.
-// *
-// *  @thread_safety This function must only be called from the main thread.
-// *
-// *  @sa @ref monitor_properties
-// *
-// *  @since Added in version 3.0.
-// *
-// *  @ingroup monitor
-// */
-//GLFWAPI void glfwGetMonitorPos(GLFWmonitor* monitor, int* xpos, int* ypos);
-//
-///*! @brief Returns the physical size of the monitor.
-// *
-// *  This function returns the size, in millimetres, of the display area of the
-// *  specified monitor.
-// *
-// *  Some systems do not provide accurate monitor size information, either
-// *  because the monitor
-// *  [EDID](https://en.wikipedia.org/wiki/Extended_display_identification_data)
-// *  data is incorrect or because the driver does not report it accurately.
-// *
-// *  Any or all of the size arguments may be `NULL`.  If an error occurs, all
-// *  non-`NULL` size arguments will be set to zero.
-// *
-// *  @param[in] monitor The monitor to query.
-// *  @param[out] widthMM Where to store the width, in millimetres, of the
-// *  monitor's display area, or `NULL`.
-// *  @param[out] heightMM Where to store the height, in millimetres, of the
-// *  monitor's display area, or `NULL`.
-// *
-// *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
-// *
-// *  @remark @win32 calculates the returned physical size from the
-// *  current resolution and system DPI instead of querying the monitor EDID data.
-// *
-// *  @thread_safety This function must only be called from the main thread.
-// *
-// *  @sa @ref monitor_properties
-// *
-// *  @since Added in version 3.0.
-// *
-// *  @ingroup monitor
-// */
+    static var version: (major: Int32, minor: Int32, rev: Int32) {
+        get {
+            var res = (0 as Int32, 0 as Int32, 0 as Int32)
+            glfwGetVersion(&res.0, &res.1, &res.2)
+            return res
+        }
+    }
+
+    /*  @brief Returns a string describing the compile-time configuration.
+     *
+     *  This function returns the compile-time generated
+     *  [version string](@ref intro_version_string) of the GLFW library binary.  It
+     *  describes the version, platform, compiler and any platform-specific
+     *  compile-time options.  It should not be confused with the OpenGL or OpenGL
+     *  ES version string, queried with `glGetString`.
+     *
+     *  __Do not use the version string__ to parse the GLFW library version.  The
+     *  @ref glfwGetVersion function provides the version of the running library
+     *  binary in numerical format.
+     *
+     *  @return The ASCII encoded GLFW version string.
+     *
+     *  @errors None.
+     *
+     *  @remark This function may be called before @ref glfwInit.
+     *
+     *  @pointer_lifetime The returned string is static and compile-time generated.
+     *
+     *  @thread_safety This function may be called from any thread.
+     *
+     *  @sa @ref intro_version
+     *  @sa glfwGetVersion
+     *
+     *  @since Added in version 3.0.
+     *
+     *  @ingroup init
+     */
+    static var versionString: String {
+        get {
+            glfwGetVersionString().asString
+        }
+    }
+
+    /* @brief Sets the error callback.
+     *
+     *  This function sets the error callback, which is called with an error code
+     *  and a human-readable description each time a GLFW error occurs.
+     *
+     *  The error callback is called on the thread where the error occurred.  If you
+     *  are using GLFW from multiple threads, your error callback needs to be
+     *  written accordingly.
+     *
+     *  Because the description string may have been generated specifically for that
+     *  error, it is not guaranteed to be valid after the callback has returned.  If
+     *  you wish to use it after the callback returns, you need to make a copy.
+     *
+     *  Once set, the error callback remains set even after the library has been
+     *  terminated.
+     *
+     *  @param[in] cbfun The new callback, or `NULL` to remove the currently set
+     *  callback.
+     *  @return The previously set callback, or `NULL` if no callback was set.
+     *
+     *  @errors None.
+     *
+     *  @remark This function may be called before @ref glfwInit.
+     *
+     *  @thread_safety This function must only be called from the main thread.
+     *
+     *  @sa @ref error_handling
+     *
+     *  @since Added in version 3.0.
+     *
+     *  @ingroup init
+     */
+    static func setErrorCallback(cbFun: @escaping ErrorFun) {
+        _g.errorCB = cbFun
+        glfwSetErrorCallback { err, desc in
+            _g.errorCB!(Error(rawValue: err)!, String(utf8String: desc!)!)
+        }
+    }
+
+    var errorCB: ErrorFun?
+
+    /*  @brief Returns the currently connected monitors.
+     *
+     *  This function returns an array of handles for all currently connected
+     *  monitors.  The primary monitor is always first in the returned array.  If no
+     *  monitors were found, this function returns `NULL`.
+     *
+     *  @param[out] count Where to store the number of monitors in the returned
+     *  array.  This is set to zero if an error occurred.
+     *  @return An array of monitor handles, or `NULL` if no monitors were found or
+     *  if an [error](@ref error_handling) occurred.
+     *
+     *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
+     *
+     *  @pointer_lifetime The returned array is allocated and freed by GLFW.  You
+     *  should not free it yourself.  It is guaranteed to be valid only until the
+     *  monitor configuration changes or the library is terminated.
+     *
+     *  @thread_safety This function must only be called from the main thread.
+     *
+     *  @sa @ref monitor_monitors
+     *  @sa @ref monitor_event
+     *  @sa glfwGetPrimaryMonitor
+     *
+     *  @since Added in version 3.0.
+     *
+     *  @ingroup monitor
+     */
+    var monitors: [Monitor] {
+        var count: Int32 = 0
+        let monitors = glfwGetMonitors(&count)!
+        var res: [Monitor] = []
+        for i in 0..<Int(count) {
+            res += monitors[0]! as Monitor
+        }
+        return res
+    }
+
+    /*  @brief Returns the primary monitor.
+     *
+     *  This function returns the primary monitor.  This is usually the monitor
+     *  where elements like the task bar or global menu bar are located.
+     *
+     *  @return The primary monitor, or `NULL` if no monitors were found or if an
+     *  [error](@ref error_handling) occurred.
+     *
+     *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
+     *
+     *  @thread_safety This function must only be called from the main thread.
+     *
+     *  @remark The primary monitor is always first in the array returned by @ref
+     *  glfwGetMonitors.
+     *
+     *  @sa @ref monitor_monitors
+     *  @sa glfwGetMonitors
+     *
+     *  @since Added in version 3.0.
+     *
+     *  @ingroup monitor
+     */
+    var primaryMonitor: Monitor {
+        glfwGetPrimaryMonitor() as Monitor
+    }
+
+    // Monitor.swift
+
+/*! @brief Returns the physical size of the monitor.
+ *
+ *  This function returns the size, in millimetres, of the display area of the
+ *  specified monitor.
+ *
+ *  Some systems do not provide accurate monitor size information, either
+ *  because the monitor
+ *  [EDID](https://en.wikipedia.org/wiki/Extended_display_identification_data)
+ *  data is incorrect or because the driver does not report it accurately.
+ *
+ *  Any or all of the size arguments may be `NULL`.  If an error occurs, all
+ *  non-`NULL` size arguments will be set to zero.
+ *
+ *  @param[in] monitor The monitor to query.
+ *  @param[out] widthMM Where to store the width, in millimetres, of the
+ *  monitor's display area, or `NULL`.
+ *  @param[out] heightMM Where to store the height, in millimetres, of the
+ *  monitor's display area, or `NULL`.
+ *
+ *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
+ *
+ *  @remark @win32 calculates the returned physical size from the
+ *  current resolution and system DPI instead of querying the monitor EDID data.
+ *
+ *  @thread_safety This function must only be called from the main thread.
+ *
+ *  @sa @ref monitor_properties
+ *
+ *  @since Added in version 3.0.
+ *
+ *  @ingroup monitor
+ */
 //GLFWAPI void glfwGetMonitorPhysicalSize(GLFWmonitor* monitor, int* widthMM, int* heightMM);
-//
+
 ///*! @brief Returns the name of the specified monitor.
 // *
 // *  This function returns a human-readable name, encoded as UTF-8, of the

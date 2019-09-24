@@ -10,54 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3cfed4-4775-47ef-99bc-ffe715ffdaa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/glfwNative/glfw.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/glfwNative/module.modulemap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/glfw_/glfw.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/glfw_/Monitor.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/build.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/build.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/checkouts/glm" beforeDir="false" afterPath="$PROJECT_DIR$/.build/checkouts/glm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/checkouts/glm/Sources/glm/typealias.swift" beforeDir="false" afterPath="$PROJECT_DIR$/.build/checkouts/glm/Sources/glm/typealias.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/debug.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.build/debug.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/dependencies-state.json" beforeDir="false" afterPath="$PROJECT_DIR$/.build/dependencies-state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/manifest.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/manifest.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw.swift.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw~partial.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw~partial.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/glfw~partial.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/master.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.build/master.swiftdeps~moduleonly" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfw.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain.swift.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/LinuxMain~partial.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/master.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.build/master.swiftdeps~moduleonly" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.xctest" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwPackageTests.xctest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swift.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swift.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests~partial.swiftmodule" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swiftdeps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias~partial.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfw.swift.o-1NXXAPIXNPB68" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfw.swift.o-1NXXAPIXNPB68" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/typealias.swift.o-3HD6Z14R3E9AH" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/typealias.swift.o-3HD6Z14R3E9AH" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Package.resolved" beforeDir="false" afterPath="$PROJECT_DIR$/Package.resolved" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Package.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Package.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/glfw/glfw.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/glfw_/glfw.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/glfw_/glfw.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/glfw_/util.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/glfw_/util.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/glfwTests/glfwTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/glfwTests/glfwTests.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +66,7 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="doiYwuxU" />
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectId" id="1R9PIpFDAqR1DOaP7WsO7Oe1hnX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -151,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569076261015</updated>
-      <workItem from="1569076262113" duration="17167000" />
+      <workItem from="1569076262113" duration="53664000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1569080830017</created>
@@ -181,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569084114441</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="in progress">
+      <created>1569157117909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569157117909</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,25 +170,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="in progress" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1569156702709">
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1569315185954">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569156702709" />
-    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1569156702709">
+    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185954" />
+    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1569315185953">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569156702709" />
-    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1569156702709">
+    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185953" />
+    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1569315185953">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569156702709" />
-    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1569156702709">
+    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185953" />
+    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1569315185954">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569156702709" />
+    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569315185954" />
     <state x="160" y="368" width="1054" height="737" key="SettingsEditor" timestamp="1569076682750">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
@@ -224,10 +198,10 @@
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state width="498" height="446" key="SwitcherDM/70.27.2490.1413@70.27.2490.1413" timestamp="1569108748864" />
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569084116230">
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569157119225">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569084116230" />
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569157119225" />
     <state x="405" y="631" width="575" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1569108746450">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>

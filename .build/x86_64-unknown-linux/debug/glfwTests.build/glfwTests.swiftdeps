@@ -43,8 +43,9 @@ depends-member:
 - ["6XCTest0A4CaseC", "init"]
 - !private ["6XCTest0A4CaseC", "print"]
 - ["6XCTest0A4CaseC", "testExample"]
-- !private ["5glfw_0A0C", "VERSION"]
-- !private ["5glfw_0A0C", "initialize"]
+- !private ["5glfw_0A0V", "initialize"]
+- !private ["5glfw_0A0V", "version"]
+- !private ["5glfw_0A0V", "versionString"]
 - ["9glfwTestsAAC", "allTests"]
 - !private ["9glfwTestsAAC", "glfw"]
 - !private ["9glfwTestsAAC", "glfwGetVersionString"]
@@ -57,7 +58,7 @@ depends-nominal:
 - "6XCTest17XCTWaiterDelegateP"
 - "6XCTestAAC"
 - "6XCTest0A4CaseC"
-- !private "5glfw_0A0C"
+- !private "5glfw_0A0V"
 - "9glfwTestsAAC"
 depends-dynamic-lookup:
 depends-external:

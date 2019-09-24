@@ -13,8 +13,9 @@ final class glfwTests: XCTestCase {
         } else {
             print("null")
         }
-        print(glfw.VERSION)
         print(glfw.initialize())
+        print(glfw.version)
+        print(glfw.versionString)
     }
 
     static var allTests = [
