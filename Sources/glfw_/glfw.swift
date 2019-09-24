@@ -1016,9 +1016,7 @@ public struct glfw {
      *  @ingroup init
      */
     static var versionString: String {
-        get {
-            glfwGetVersionString().asString
-        }
+        glfwGetVersionString().asString
     }
 
     /* @brief Sets the error callback.
