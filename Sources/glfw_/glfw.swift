@@ -1602,7 +1602,6 @@ public struct glfw {
         glfwDestroyCursor(cursor)
     }
 
-
     /*! @brief Sets the joystick configuration callback.
      *
      *  This function sets the joystick configuration callback, or removes the
@@ -1809,48 +1808,49 @@ public struct glfw {
     static func swapInterval(_ interval: Int32) {
         glfwSwapInterval(interval)
     }
-//
-///*! @brief Returns whether the specified extension is available.
-// *
-// *  This function returns whether the specified
-// *  [API extension](@ref context_glext) is supported by the current OpenGL or
-// *  OpenGL ES context.  It searches both for client API extension and context
-// *  creation API extensions.
-// *
-// *  A context must be current on the calling thread.  Calling this function
-// *  without a current context will cause a @ref GLFW_NO_CURRENT_CONTEXT error.
-// *
-// *  As this functions retrieves and searches one or more extension strings each
-// *  call, it is recommended that you cache its results if it is going to be used
-// *  frequently.  The extension strings will not change during the lifetime of
-// *  a context, so there is no danger in doing this.
-// *
-// *  This function does not apply to Vulkan.  If you are using Vulkan, see @ref
-// *  glfwGetRequiredInstanceExtensions, `vkEnumerateInstanceExtensionProperties`
-// *  and `vkEnumerateDeviceExtensionProperties` instead.
-// *
-// *  @param[in] extension The ASCII encoded name of the extension.
-// *  @return `GLFW_TRUE` if the extension is available, or `GLFW_FALSE`
-// *  otherwise.
-// *
-// *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED, @ref
-// *  GLFW_NO_CURRENT_CONTEXT, @ref GLFW_INVALID_VALUE and @ref
-// *  GLFW_PLATFORM_ERROR.
-// *
-// *  @thread_safety This function may be called from any thread.
-// *
-// *  @sa @ref context_glext
-// *  @sa glfwGetProcAddress
-// *
-// *  @since Added in version 1.0.
-// *
-// *  @ingroup context
-// */
-//GLFWAPI int glfwExtensionSupported(const char*
-//
-//extension
-//
-//);
+
+    /*  @brief Returns whether the specified extension is available.
+     *
+     *  This function returns whether the specified
+     *  [API extension](@ref context_glext) is supported by the current OpenGL or
+     *  OpenGL ES context.  It searches both for client API extension and context
+     *  creation API extensions.
+     *
+     *  A context must be current on the calling thread.  Calling this function
+     *  without a current context will cause a @ref GLFW_NO_CURRENT_CONTEXT error.
+     *
+     *  As this functions retrieves and searches one or more extension strings each
+     *  call, it is recommended that you cache its results if it is going to be used
+     *  frequently.  The extension strings will not change during the lifetime of
+     *  a context, so there is no danger in doing this.
+     *
+     *  This function does not apply to Vulkan.  If you are using Vulkan, see @ref
+     *  glfwGetRequiredInstanceExtensions, `vkEnumerateInstanceExtensionProperties`
+     *  and `vkEnumerateDeviceExtensionProperties` instead.
+     *
+     *  @param[in] extension The ASCII encoded name of the extension.
+     *  @return `GLFW_TRUE` if the extension is available, or `GLFW_FALSE`
+     *  otherwise.
+     *
+     *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED, @ref
+     *  GLFW_NO_CURRENT_CONTEXT, @ref GLFW_INVALID_VALUE and @ref
+     *  GLFW_PLATFORM_ERROR.
+     *
+     *  @thread_safety This function may be called from any thread.
+     *
+     *  @sa @ref context_glext
+     *  @sa glfwGetProcAddress
+     *
+     *  @since Added in version 1.0.
+     *
+     *  @ingroup context
+     */
+    func extensionSupported(extension: String) -> Bool {
+        `extension`.withCString {
+            glfwExtensionSupported($0) == GLFW_TRUE
+        }
+    }
+
 //
 ///*! @brief Returns the address of the specified function for the current
 // *  context.
@@ -1893,77 +1893,87 @@ public struct glfw {
 // *  @ingroup context
 // */
 //GLFWAPI GLFWglproc glfwGetProcAddress(const char* procname);
-//
-///*! @brief Returns whether the Vulkan loader has been found.
-// *
-// *  This function returns whether the Vulkan loader has been found.  This check
-// *  is performed by @ref glfwInit.
-// *
-// *  The availability of a Vulkan loader does not by itself guarantee that window
-// *  surface creation or even device creation is possible.  Call @ref
-// *  glfwGetRequiredInstanceExtensions to check whether the extensions necessary
-// *  for Vulkan surface creation are available and @ref
-// *  glfwGetPhysicalDevicePresentationSupport to check whether a queue family of
-// *  a physical device supports image presentation.
-// *
-// *  @return `GLFW_TRUE` if Vulkan is available, or `GLFW_FALSE` otherwise.
-// *
-// *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
-// *
-// *  @thread_safety This function may be called from any thread.
-// *
-// *  @sa @ref vulkan_support
-// *
-// *  @since Added in version 3.2.
-// *
-// *  @ingroup vulkan
-// */
-//GLFWAPI int glfwVulkanSupported(void);
-//
-///*! @brief Returns the Vulkan instance extensions required by GLFW.
-// *
-// *  This function returns an array of names of Vulkan instance extensions required
-// *  by GLFW for creating Vulkan surfaces for GLFW windows.  If successful, the
-// *  list will always contains `VK_KHR_surface`, so if you don't require any
-// *  additional extensions you can pass this list directly to the
-// *  `VkInstanceCreateInfo` struct.
-// *
-// *  If Vulkan is not available on the machine, this function returns `NULL` and
-// *  generates a @ref GLFW_API_UNAVAILABLE error.  Call @ref glfwVulkanSupported
-// *  to check whether Vulkan is available.
-// *
-// *  If Vulkan is available but no set of extensions allowing window surface
-// *  creation was found, this function returns `NULL`.  You may still use Vulkan
-// *  for off-screen rendering and compute work.
-// *
-// *  @param[out] count Where to store the number of extensions in the returned
-// *  array.  This is set to zero if an error occurred.
-// *  @return An array of ASCII encoded extension names, or `NULL` if an
-// *  [error](@ref error_handling) occurred.
-// *
-// *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED and @ref
-// *  GLFW_API_UNAVAILABLE.
-// *
-// *  @remarks Additional extensions may be required by future versions of GLFW.
-// *  You should check if any extensions you wish to enable are already in the
-// *  returned array, as it is an error to specify an extension more than once in
-// *  the `VkInstanceCreateInfo` struct.
-// *
-// *  @pointer_lifetime The returned array is allocated and freed by GLFW.  You
-// *  should not free it yourself.  It is guaranteed to be valid only until the
-// *  library is terminated.
-// *
-// *  @thread_safety This function may be called from any thread.
-// *
-// *  @sa @ref vulkan_ext
-// *  @sa glfwCreateWindowSurface
-// *
-// *  @since Added in version 3.2.
-// *
-// *  @ingroup vulkan
-// */
-//GLFWAPI const char** glfwGetRequiredInstanceExtensions(uint32_t* count);
-//
+
+    /*  @brief Returns whether the Vulkan loader has been found.
+     *
+     *  This function returns whether the Vulkan loader has been found.  This check
+     *  is performed by @ref glfwInit.
+     *
+     *  The availability of a Vulkan loader does not by itself guarantee that window
+     *  surface creation or even device creation is possible.  Call @ref
+     *  glfwGetRequiredInstanceExtensions to check whether the extensions necessary
+     *  for Vulkan surface creation are available and @ref
+     *  glfwGetPhysicalDevicePresentationSupport to check whether a queue family of
+     *  a physical device supports image presentation.
+     *
+     *  @return `GLFW_TRUE` if Vulkan is available, or `GLFW_FALSE` otherwise.
+     *
+     *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED.
+     *
+     *  @thread_safety This function may be called from any thread.
+     *
+     *  @sa @ref vulkan_support
+     *
+     *  @since Added in version 3.2.
+     *
+     *  @ingroup vulkan
+     */
+    func vulkanSupported() -> Bool {
+        glfwVulkanSupported() == GLFW_TRUE
+    }
+
+    /*  @brief Returns the Vulkan instance extensions required by GLFW.
+     *
+     *  This function returns an array of names of Vulkan instance extensions required
+     *  by GLFW for creating Vulkan surfaces for GLFW windows.  If successful, the
+     *  list will always contains `VK_KHR_surface`, so if you don't require any
+     *  additional extensions you can pass this list directly to the
+     *  `VkInstanceCreateInfo` struct.
+     *
+     *  If Vulkan is not available on the machine, this function returns `NULL` and
+     *  generates a @ref GLFW_API_UNAVAILABLE error.  Call @ref glfwVulkanSupported
+     *  to check whether Vulkan is available.
+     *
+     *  If Vulkan is available but no set of extensions allowing window surface
+     *  creation was found, this function returns `NULL`.  You may still use Vulkan
+     *  for off-screen rendering and compute work.
+     *
+     *  @param[out] count Where to store the number of extensions in the returned
+     *  array.  This is set to zero if an error occurred.
+     *  @return An array of ASCII encoded extension names, or `NULL` if an
+     *  [error](@ref error_handling) occurred.
+     *
+     *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED and @ref
+     *  GLFW_API_UNAVAILABLE.
+     *
+     *  @remarks Additional extensions may be required by future versions of GLFW.
+     *  You should check if any extensions you wish to enable are already in the
+     *  returned array, as it is an error to specify an extension more than once in
+     *  the `VkInstanceCreateInfo` struct.
+     *
+     *  @pointer_lifetime The returned array is allocated and freed by GLFW.  You
+     *  should not free it yourself.  It is guaranteed to be valid only until the
+     *  library is terminated.
+     *
+     *  @thread_safety This function may be called from any thread.
+     *
+     *  @sa @ref vulkan_ext
+     *  @sa glfwCreateWindowSurface
+     *
+     *  @since Added in version 3.2.
+     *
+     *  @ingroup vulkan
+     */
+    func getRequiredInstanceExtensions() -> [String] {
+        var count: UInt32 = 0
+        let exts = glfwGetRequiredInstanceExtensions(&count)!
+        var res: [String] = []
+        for i in 0..<Int(count) {
+            res += String(utf8String: exts[i]!)!
+        }
+        return res
+    }
+
 //#if defined(VK_VERSION_1_0)
 //
 ///*! @brief Returns the address of the specified Vulkan instance function.

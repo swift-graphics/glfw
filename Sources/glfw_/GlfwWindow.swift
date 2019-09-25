@@ -130,8 +130,10 @@ open class GlfwWindow {
      *
      *  @ingroup window
      */
-    init(size: ivec2, title: String, monitor: glfw.Monitor?, share: GlfwWindow?) {
-        handle = glfwCreateWindow(size.x, size.y, UnsafePointer(title), monitor, share?.handle)
+    init(_ size: ivec2, _ title: String, _ monitor: glfw.Monitor? = nil, _ share: GlfwWindow? = nil) {
+        handle = title.withCString {
+            glfwCreateWindow(size.x, size.y, $0, monitor, share?.handle)
+        }
     }
 
     /*  @brief Destroys the specified window and its context.
