@@ -21,11 +21,15 @@ extension UnsafePointer where Pointee == Int8 {
     }
 }
 
-var _g = glfw()
-
 extension Array {
 
     @inlinable public static func += (array: inout [Element], element: Element) {
         array.append(element)
     }
 }
+
+let GLFW_TRANSPARENT_FRAMEBUFFER: Int32 = 0x0002000A
+let GLFW_HOVERED: Int32 = 0x0002000B
+let GLFW_FOCUS_ON_SHOW: Int32 = 0x0002000C
+let GLFW_LOCK_KEY_MODS: Int32 = 0x00033004
+let GLFW_RAW_MOUSE_MOTION: Int32 = 0x00033005
