@@ -38,7 +38,7 @@ commands:
 
   "C.glfwTests-debug.module":
     tool: swift-compiler
-    executable: "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/bin/swiftc"
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
     module-name: "glfwTests"
     module-output-path: "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfwTests.swiftmodule"
     inputs: ["/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.swiftmodule","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glm.swiftmodule","/home/elect/SwiftProjects/glfw/Tests/glfwTests/XCTestManifests.swift","/home/elect/SwiftProjects/glfw/Tests/glfwTests/glfwTests.swift"]
@@ -54,7 +54,7 @@ commands:
 
   "C.glfw_-debug.module":
     tool: swift-compiler
-    executable: "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/bin/swiftc"
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
     module-name: "glfw_"
     module-output-path: "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.swiftmodule"
     inputs: ["/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glm.swiftmodule","/home/elect/SwiftProjects/glfw/Sources/glfw_/GlfwWindow.swift","/home/elect/SwiftProjects/glfw/Sources/glfw_/Input.swift","/home/elect/SwiftProjects/glfw/Sources/glfw_/Monitor.swift","/home/elect/SwiftProjects/glfw/Sources/glfw_/glfw.swift","/home/elect/SwiftProjects/glfw/Sources/glfw_/util.swift"]
@@ -70,7 +70,7 @@ commands:
 
   "C.glfw_PackageTests-debug.module":
     tool: swift-compiler
-    executable: "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/bin/swiftc"
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
     module-name: "glfw_PackageTests"
     module-output-path: "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_PackageTests.swiftmodule"
     inputs: ["/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfwTests.swiftmodule","/home/elect/SwiftProjects/glfw/Tests/LinuxMain.swift"]
@@ -89,11 +89,11 @@ commands:
     description: "Linking ./.build/x86_64-unknown-linux/debug/glfw_PackageTests.xctest"
     inputs: ["/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.build/GlfwWindow.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.build/Input.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.build/Monitor.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.build/glfw.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_.build/util.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_PackageTests.build/LinuxMain.swift.o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o"]
     outputs: ["/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_PackageTests.xctest"]
-    args: ["/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/bin/swiftc","-sdk","/","-L/usr/local/lib","-lglfw3","-g","-L","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug","-o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_PackageTests.xctest","-module-name","glfw_PackageTests","-emit-executable","-Xlinker","-rpath=$ORIGIN","@/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_PackageTests.product/Objects.LinkFileList","-target","x86_64-unknown-linux","-L","/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/lib"]
+    args: ["/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc","-sdk","/","-L/usr/local/lib","-lglfw3","-g","-L","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug","-o","/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_PackageTests.xctest","-module-name","glfw_PackageTests","-emit-executable","-Xlinker","-rpath=$ORIGIN","@/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glfw_PackageTests.product/Objects.LinkFileList","-target","x86_64-unknown-linux","-L","/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/lib"]
 
   "C.glm-debug.module":
     tool: swift-compiler
-    executable: "/usr/local/bin/swift-5.1-DEVELOPMENT-SNAPSHOT-2019-09-16-a-ubuntu18.04/usr/bin/swiftc"
+    executable: "/usr/local/bin/swift-5.1-RELEASE-ubuntu18.04/usr/bin/swiftc"
     module-name: "glm"
     module-output-path: "/home/elect/SwiftProjects/glfw/.build/x86_64-unknown-linux/debug/glm.swiftmodule"
     inputs: ["/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/typealias.swift"]

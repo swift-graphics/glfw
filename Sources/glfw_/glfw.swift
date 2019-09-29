@@ -342,6 +342,7 @@ public struct glfw {
             var count: Int32 = 0
             let buttons = glfwGetJoystickButtons(rawValue, &count)!
             var res: [InputAction] = []
+            res.reserveCapacity(Int(count))
             for i in 0..<Int(count) {
                 res += buttons[i] == GLFW_PRESS ? InputAction.press : InputAction.release
             }
@@ -1260,6 +1261,7 @@ public struct glfw {
         var count: Int32 = 0
         let monitors = glfwGetMonitors(&count)!
         var res: [Monitor] = []
+        res.reserveCapacity(Int(count))
         for i in 0..<Int(count) {
             res += monitors[i]! as Monitor
         }
@@ -1968,6 +1970,7 @@ public struct glfw {
         var count: UInt32 = 0
         let exts = glfwGetRequiredInstanceExtensions(&count)!
         var res: [String] = []
+        res.reserveCapacity(Int(count))
         for i in 0..<Int(count) {
             res += String(utf8String: exts[i]!)!
         }

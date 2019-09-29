@@ -11,20 +11,35 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3cfed4-4775-47ef-99bc-ffe715ffdaa5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.build/build.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/build.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/debug.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.build/debug.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/manifest.db" beforeDir="false" afterPath="$PROJECT_DIR$/.build/manifest.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftdoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/XCTestManifests~partial.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swift.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests~partial.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests~partial.swiftdoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/glfwTests~partial.swiftmodule" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.build/master.swiftdeps~moduleonly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.swiftdoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glfwTests.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/master.swiftdeps~moduleonly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.d" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swift.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swiftdeps" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias.swiftdeps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias~partial.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias~partial.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias~partial.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.build/typealias~partial.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/glm.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/XCTestManifests.swift.o-3DEOSYSY4L1GT" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/XCTestManifests.swift.o-3DEOSYSY4L1GT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/glfwTests.swift.o-3BNFKI75R66W1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/typealias.swift.o-3HD6Z14R3E9AH" beforeDir="false" afterPath="$PROJECT_DIR$/.build/x86_64-unknown-linux/debug/index/store/v5/units/typealias.swift.o-3HD6Z14R3E9AH" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/glfw_/GlfwWindow.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/glfw_/GlfwWindow.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/glfw_/glfw.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/glfw_/glfw.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/glfwTests/glfwTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/glfwTests/glfwTests.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +92,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/glfw" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gln" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -119,7 +134,10 @@
       <option name="presentableId" value="Default" />
       <updated>1569076261015</updated>
       <workItem from="1569076262113" duration="55935000" />
-      <workItem from="1569319608789" duration="35073000" />
+      <workItem from="1569319608789" duration="39378000" />
+      <workItem from="1569497986566" duration="742000" />
+      <workItem from="1569616730654" duration="744000" />
+      <workItem from="1569754737896" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1569080830017</created>
@@ -184,8 +202,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569419351353</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="done">
+      <created>1569429263609</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569429263609</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -208,29 +236,38 @@
     <MESSAGE value="in progress 3" />
     <MESSAGE value="fixed build" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="375" y="461" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1569319596869">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state x="375" y="461" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/70.27.2490.1413@70.27.2490.1413" timestamp="1569319596869" />
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom" timestamp="1569429187655">
+    <state x="361" y="446" width="642" height="581" key="#glfwTests" timestamp="1569616735571">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569429187655" />
-    <state width="1199" height="394" key="GridCell.Tab.0.center" timestamp="1569429187653">
+    <state x="361" y="446" width="642" height="581" key="#glfwTests/70.27.2490.1413@70.27.2490.1413" timestamp="1569616735571" />
+    <state x="475" y="491" width="424" height="491" key="FileChooserDialogImpl" timestamp="1569617889715">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569429187653" />
-    <state width="1199" height="394" key="GridCell.Tab.0.left" timestamp="1569429187570">
+    <state x="475" y="491" width="424" height="491" key="FileChooserDialogImpl/70.27.2490.1413@70.27.2490.1413" timestamp="1569617889715" />
+    <state width="1189" height="394" key="GridCell.Tab.0.bottom" timestamp="1569617890795">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569429187570" />
-    <state width="1199" height="394" key="GridCell.Tab.0.right" timestamp="1569429187655">
+    <state width="1189" height="394" key="GridCell.Tab.0.bottom/70.27.2490.1413@70.27.2490.1413" timestamp="1569617890795" />
+    <state width="1189" height="394" key="GridCell.Tab.0.center" timestamp="1569617890794">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state width="1199" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569429187654" />
+    <state width="1189" height="394" key="GridCell.Tab.0.center/70.27.2490.1413@70.27.2490.1413" timestamp="1569617890794" />
+    <state width="1189" height="394" key="GridCell.Tab.0.left" timestamp="1569617890794">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="1189" height="394" key="GridCell.Tab.0.left/70.27.2490.1413@70.27.2490.1413" timestamp="1569617890794" />
+    <state width="1189" height="394" key="GridCell.Tab.0.right" timestamp="1569617890794">
+      <screen x="70" y="27" width="2490" height="1413" />
+    </state>
+    <state width="1189" height="394" key="GridCell.Tab.0.right/70.27.2490.1413@70.27.2490.1413" timestamp="1569617890794" />
     <state x="160" y="368" width="1054" height="737" key="SettingsEditor" timestamp="1569076682750">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
@@ -239,17 +276,17 @@
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state width="498" height="446" key="SwitcherDM/70.27.2490.1413@70.27.2490.1413" timestamp="1569108748864" />
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569419352939">
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2" timestamp="1569429264815">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569419352939" />
+    <state x="251" y="461" width="862" height="552" key="Vcs.Push.Dialog.v2/70.27.2490.1413@70.27.2490.1413" timestamp="1569429264815" />
     <state x="405" y="631" width="575" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1569108746450">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
     <state x="405" y="631" width="575" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate/70.27.2490.1413@70.27.2490.1413" timestamp="1569108746450" />
-    <state x="339" y="499" width="707" height="468" key="find.popup" timestamp="1569429215930">
+    <state x="339" y="499" width="707" height="468" key="find.popup" timestamp="1569754743930">
       <screen x="70" y="27" width="2490" height="1413" />
     </state>
-    <state x="339" y="499" width="707" height="468" key="find.popup/70.27.2490.1413@70.27.2490.1413" timestamp="1569429215930" />
+    <state x="339" y="499" width="707" height="468" key="find.popup/70.27.2490.1413@70.27.2490.1413" timestamp="1569754743930" />
   </component>
 </project>
