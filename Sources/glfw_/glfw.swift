@@ -2106,6 +2106,5 @@ public struct glfw {
     func createWindowSurface(instance: VkInstance, window: Window?, surface: UnsafeMutablePointer<VkSurfaceKHR?>?) -> VkResult {
         glfwCreateWindowSurface(instance, window, nil, surface)
     }
-
     #endif
 }
