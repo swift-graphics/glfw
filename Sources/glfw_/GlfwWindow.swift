@@ -1783,7 +1783,7 @@ open class GlfwWindow {
          *  @ingroup input
          */
         get {
-            String(utf8String: glfwGetClipboardString(handle)!)!
+            String(cString: glfwGetClipboardString(handle)!)
         }
     }
 

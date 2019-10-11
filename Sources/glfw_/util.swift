@@ -16,7 +16,7 @@ extension Int32 {
 extension UnsafePointer where Pointee == Int8 {
     var asString: String {
         get {
-            String(utf8String: self)!
+            String(cString: self)
         }
     }
 }
