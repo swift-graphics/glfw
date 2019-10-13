@@ -1847,7 +1847,7 @@ public struct glfw {
      *
      *  @ingroup context
      */
-    func extensionSupported(extension: String) -> Bool {
+    public static func extensionSupported(extension: String) -> Bool {
         `extension`.withCString {
             glfwExtensionSupported($0) == GLFW_TRUE
         }
@@ -1920,7 +1920,7 @@ public struct glfw {
      *
      *  @ingroup vulkan
      */
-    func vulkanSupported() -> Bool {
+    public static var vulkanSupported: Bool {
         glfwVulkanSupported() == GLFW_TRUE
     }
 
@@ -1966,7 +1966,7 @@ public struct glfw {
      *
      *  @ingroup vulkan
      */
-    func getRequiredInstanceExtensions() -> [String] {
+    public static var requiredInstanceExtensions: [String] {
         var count: UInt32 = 0
         let exts = glfwGetRequiredInstanceExtensions(&count)!
         var res: [String] = []
@@ -2051,7 +2051,7 @@ public struct glfw {
      *
      *  @ingroup vulkan
      */
-    func getPhysicalDevicePresentationSupport(instance: VkInstance, device: VkPhysicalDevice, queuefamily: Int) -> Bool {
+    public static func getPhysicalDevicePresentationSupport(instance: VkInstance, device: VkPhysicalDevice, queuefamily: Int) -> Bool {
         glfwGetPhysicalDevicePresentationSupport(instance, device, UInt32(queuefamily)) == GLFW_TRUE
     }
 
@@ -2103,7 +2103,7 @@ public struct glfw {
      *
      *  @ingroup vulkan
      */
-    func createWindowSurface(instance: VkInstance, window: Window?, surface: UnsafeMutablePointer<VkSurfaceKHR?>?) -> VkResult {
+    public static func createWindowSurface(instance: VkInstance, window: Window?, surface: UnsafeMutablePointer<VkSurfaceKHR?>?) -> VkResult {
         glfwCreateWindowSurface(instance, window, nil, surface)
     }
     #endif
