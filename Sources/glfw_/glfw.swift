@@ -1977,8 +1977,7 @@ public struct glfw {
         return res
     }
 
-    let a = VK_VERSION_1_0
-    #if VK_VERSION_1_0
+    #if true
 
 /*! @brief Returns the address of the specified Vulkan instance function.
  *
@@ -2053,7 +2052,7 @@ public struct glfw {
      *  @ingroup vulkan
      */
     func getPhysicalDevicePresentationSupport(instance: VkInstance, device: VkPhysicalDevice, queuefamily: Int) -> Bool {
-        glfwGetPhysicalDevicePresentationSuppsort(instance, device, UInt32(queuefamily)) == GLFW_TRUE
+        glfwGetPhysicalDevicePresentationSupport(instance, device, UInt32(queuefamily)) == GLFW_TRUE
     }
 
     /*  @brief Creates a Vulkan surface for the specified window.
