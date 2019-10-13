@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "../glm", .revision("fcb9efcd2b0f530ad4de6c59386d8714ee04149c"))
+        .package(url: "../glm", .revision("bb49a7ea79941b46802f4bddf56288be60ce5dbf"))
     ],
     targets: [
         .systemLibrary(name: "glfwNative", pkgConfig: "glfw3"),
