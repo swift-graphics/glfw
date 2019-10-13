@@ -1,5 +1,9 @@
 version: "Swift version 5.1 (swift-5.1-RELEASE)"
 options: "4d97c00c26b70b8c5ca249a0f7e2e590"
-build_time: [1569617821, 487201939]
+build_time: [1570958281, 949209631]
 inputs:
-  "/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/typealias.swift": [1569315340, 351639026]
+  "/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/ivec4.swift": [9223372036, 854775807]
+  "/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/typealias.swift": [1570958278, 786800561]
+  "/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/uvec2.swift": [9223372036, 854775807]
+  "/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/uvec3.swift": [9223372036, 854775807]
+  "/home/elect/SwiftProjects/glfw/.build/checkouts/glm/Sources/glm/vec2.swift": [9223372036, 854775807]

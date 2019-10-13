@@ -1,4 +1,4 @@
-#define VK_VERSION_1_0
+#define VK_VERSION_1_0 = 1
 
 #ifdef VK_VERSION_1_0
 #include <vulkan/vulkan.h>
