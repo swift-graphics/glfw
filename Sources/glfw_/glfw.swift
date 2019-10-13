@@ -33,8 +33,8 @@ import Dispatch
 
 public struct glfw {
 
-//    private init() {
-//    }
+    public init() {
+    }
 
     /*************************************************************************
      * GLFW API tokens
@@ -45,7 +45,7 @@ public struct glfw {
      *  This is incremented when the API is changed in non-compatible ways.
      *  @ingroup init
      */
-    static let VERSION_MAJOR = 3
+    public static let VERSION_MAJOR = 3
 
     /*  @brief The minor version number of the GLFW library.
      *
@@ -53,9 +53,9 @@ public struct glfw {
      *  backward-compatible.
      *  @ingroup init
      */
-    static let VERSION_MINOR = 2
+    public static let VERSION_MINOR = 2
 
-//    static var VERSION: String { TODO?
+//    public static var VERSION: String { TODO?
 //        get {
 //            "\(VERSION_MAJOR).\(VERSION_MINOR)"
 //        }
@@ -67,11 +67,11 @@ public struct glfw {
      *  API changes.
      *  @ingroup init
      */
-    static let VERSION_REVISION = 1
+    public static let VERSION_REVISION = 1
 
     /*  @name Key and button actions
     *  @brief The key or mouse button was released. */
-    enum InputAction: Int32 {
+    public enum InputAction: Int32 {
 
         /*  @brief The key or mouse button was released.
          *
@@ -119,7 +119,7 @@ public struct glfw {
      *  @ingroup input
      *  @{
      */
-    enum Key: Int32 {
+    public enum Key: Int32 {
         /* The unknown key */
         case unknown = -1
 
@@ -142,7 +142,7 @@ public struct glfw {
         case kp0 = 320, kp1, kp2, kp3, kp4, kp5, kp6, kp7, kp8, kp9, kpDecimal, kpDivide, kpMultiply, kpSubtract, kpAdd, kpEnter, kpEqual
         case leftShift, leftControl, leftAlt, leftSuper, rightShift, rightControl, rightAlt, rightSuper, menu
 
-        static let LAST = menu
+        public static let LAST = menu
 
         /*  @brief Returns the localized name of the specified printable key.
          *
@@ -211,7 +211,7 @@ public struct glfw {
      *
      *  @ingroup input
      *  @{ */
-    enum ModModifier: Int32 {
+    public enum ModModifier: Int32 {
 
         /* @brief If this bit is set one or more Shift keys were held down. */
         case shift = 0x0001
@@ -230,9 +230,9 @@ public struct glfw {
      *
      *  @ingroup input
      *  @{ */
-    enum MouseButton: Int32 {
+    public enum MouseButton: Int32 {
         case _1, _2, _3, _4, _5, _6, _7, _8
-        static let last = _8, left = _1, right = _2, middle = _3
+        public static let last = _8, left = _1, right = _2, middle = _3
     }
 
     /*  @defgroup joysticks Joysticks
@@ -241,9 +241,9 @@ public struct glfw {
      *
      *  @ingroup input
      *  @{ */
-    enum Joystick: Int32 {
+    public enum Joystick: Int32 {
         case _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16
-        static let last = _16
+        public static let last = _16
 
         /*  @brief Returns whether the specified joystick is present.
          *
@@ -253,7 +253,7 @@ public struct glfw {
          *  @return `GLFW_TRUE` if the joystick is present, or `GLFW_FALSE` otherwise.
          *
          *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED, @ref
-         *  GLFW_INVALID_ENUM and @ref GLFW_PLATFORM_ERROR.
+         *  GLFW_INVALID_public enum and @ref GLFW_PLATFORM_ERROR.
          *
          *  @thread_safety This function must only be called from the main thread.
          *
@@ -284,7 +284,7 @@ public struct glfw {
          *  an [error](@ref error_handling) occurred.
          *
          *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED, @ref
-         *  GLFW_INVALID_ENUM and @ref GLFW_PLATFORM_ERROR.
+         *  GLFW_INVALID_public enum and @ref GLFW_PLATFORM_ERROR.
          *
          *  @pointer_lifetime The returned array is allocated and freed by GLFW.  You
          *  should not free it yourself.  It is valid until the specified joystick is
@@ -322,7 +322,7 @@ public struct glfw {
          *  or an [error](@ref error_handling) occurred.
          *
          *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED, @ref
-         *  GLFW_INVALID_ENUM and @ref GLFW_PLATFORM_ERROR.
+         *  GLFW_INVALID_public enum and @ref GLFW_PLATFORM_ERROR.
          *
          *  @pointer_lifetime The returned array is allocated and freed by GLFW.  You
          *  should not free it yourself.  It is valid until the specified joystick is
@@ -364,7 +364,7 @@ public struct glfw {
          *  is not present or an [error](@ref error_handling) occurred.
          *
          *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED, @ref
-         *  GLFW_INVALID_ENUM and @ref GLFW_PLATFORM_ERROR.
+         *  GLFW_INVALID_public enum and @ref GLFW_PLATFORM_ERROR.
          *
          *  @pointer_lifetime The returned string is allocated and freed by GLFW.  You
          *  should not free it yourself.  It is valid until the specified joystick is
@@ -389,7 +389,7 @@ public struct glfw {
      *  See [error handling](@ref error_handling) for how these are used.
      *
      *  @ingroup init */
-    enum Error: Int32 {
+    public enum Error: Int32 {
 
         /*  @brief GLFW has not been initialized.
          *
@@ -410,9 +410,9 @@ public struct glfw {
          *  calling functions that require a current context.
          */
         case noCurrentContext
-        /*  @brief One of the arguments to the function was an invalid enum value.
+        /*  @brief One of the arguments to the function was an invalid public enum value.
          *
-         *  One of the arguments to the function was an invalid enum value, for example
+         *  One of the arguments to the function was an invalid public enum value, for example
          *  requesting [GLFW_RED_BITS](@ref window_hints_fb) with @ref
          *  glfwGetWindowAttrib.
          *
@@ -582,7 +582,7 @@ public struct glfw {
      *
      *  @ingroup input
      *  @{ */
-    enum CursorShape: Int32 {
+    public enum CursorShape: Int32 {
         /*  @brief The regular arrow cursor shape.
          *
          *  The regular arrow cursor.
@@ -664,7 +664,7 @@ public struct glfw {
      *
      *  @ingroup monitor
      */
-    typealias Monitor = OpaquePointer
+    public typealias Monitor = OpaquePointer
 
     /*  @brief Opaque window object.
      *
@@ -676,7 +676,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias Window = OpaquePointer
+    public typealias Window = OpaquePointer
 
     /*  @brief Opaque cursor object.
      *
@@ -688,7 +688,7 @@ public struct glfw {
      *
      *  @ingroup cursor
      */
-    typealias Cursor = OpaquePointer
+    public typealias Cursor = OpaquePointer
 
     /*  @brief The function signature for error callbacks.
      *
@@ -704,7 +704,7 @@ public struct glfw {
      *
      *  @ingroup init
      */
-    typealias ErrorFun = (Error, _ description: String) -> Void
+    public typealias ErrorFun = (Error, _ description: String) -> Void
 
     /*  @brief The function signature for window position callbacks.
      *
@@ -723,7 +723,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias WindowPosFun = (_ upperLeftPos: ivec2) -> Void
+    public typealias WindowPosFun = (_ upperLeftPos: ivec2) -> Void
 
     /*  @brief The function signature for window resize callbacks.
      *
@@ -741,7 +741,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias WindowSizeFun = (_ size: ivec2) -> Void
+    public typealias WindowSizeFun = (_ size: ivec2) -> Void
 
     /*  @brief The function signature for window close callbacks.
      *
@@ -757,7 +757,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias WindowCloseFun = () -> Void
+    public typealias WindowCloseFun = () -> Void
 
     /*  @brief The function signature for window content refresh callbacks.
      *
@@ -773,7 +773,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias WindowRefreshFun = () -> Void
+    public typealias WindowRefreshFun = () -> Void
 
     /*  @brief The function signature for window focus/defocus callbacks.
      *
@@ -790,7 +790,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias WindowFocusFun = (_ focused: Bool) -> Void
+    public typealias WindowFocusFun = (_ focused: Bool) -> Void
 
     /*  @brief The function signature for window iconify/restore callbacks.
      *
@@ -808,7 +808,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias WindowIconifyFun = (_ iconified: Bool) -> Void
+    public typealias WindowIconifyFun = (_ iconified: Bool) -> Void
 
     /*  @brief The function signature for framebuffer resize callbacks.
      *
@@ -826,7 +826,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    typealias FramebufferSizeFun = (_ newSize: ivec2) -> Void
+    public typealias FramebufferSizeFun = (_ newSize: ivec2) -> Void
 
     /*  @brief The function signature for mouse button callbacks.
      *
@@ -847,7 +847,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias MouseButtonFun = (MouseButton, InputAction, ModModifier) -> Void
+    public typealias MouseButtonFun = (MouseButton, InputAction, ModModifier) -> Void
 
     /*  @brief The function signature for cursor position callbacks.
      *
@@ -866,7 +866,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias CursorPosFun = (_ newPos: dvec2) -> Void
+    public typealias CursorPosFun = (_ newPos: dvec2) -> Void
 
     /*  @brief The function signature for cursor enter/leave callbacks.
      *
@@ -883,7 +883,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias CursorEnterFun = (_ entered: Bool) -> Void
+    public typealias CursorEnterFun = (_ entered: Bool) -> Void
 
     /*  @brief The function signature for scroll callbacks.
      *
@@ -900,7 +900,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias ScrollFun = (_ offset: dvec2) -> Void
+    public typealias ScrollFun = (_ offset: dvec2) -> Void
 
     /*  @brief The function signature for keyboard key callbacks.
      *
@@ -921,7 +921,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias KeyFun = (Key, _ scancode: Int32, InputAction, ModModifier) -> Void
+    public typealias KeyFun = (Key, _ scancode: Int32, InputAction, ModModifier) -> Void
 
     /*  @brief The function signature for Unicode character callbacks.
      *
@@ -938,7 +938,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias CharFun = (_ codepoint: UInt32) -> Void
+    public typealias CharFun = (_ codepoint: UInt32) -> Void
 
     /*  @brief The function signature for Unicode character with modifiers
      *  callbacks.
@@ -959,7 +959,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias CharModsFun = (_ codepoint: UInt32, ModModifier) -> Void
+    public typealias CharModsFun = (_ codepoint: UInt32, ModModifier) -> Void
 
     /*  @brief The function signature for file drop callbacks.
      *
@@ -976,7 +976,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias DropFun = (_ droppedFiles: Int32, _ paths: String...) -> Void
+    public typealias DropFun = (_ droppedFiles: Int32, _ paths: String...) -> Void
 
     /*  @brief The function signature for monitor configuration callbacks.
      *
@@ -992,7 +992,7 @@ public struct glfw {
      *
      *  @ingroup monitor
      */
-    typealias MonitorFun = (_ connected: Bool) -> Void
+    public typealias MonitorFun = (_ connected: Bool) -> Void
 
     /*  @brief The function signature for joystick configuration callbacks.
      *
@@ -1009,7 +1009,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    typealias JoystickFun = (Joystick, _ connected: Bool) -> Void
+    public typealias JoystickFun = (Joystick, _ connected: Bool) -> Void
 
     /*  @brief Video mode type.
      *
@@ -1023,7 +1023,7 @@ public struct glfw {
      *
      *  @ingroup monitor
      */
-    typealias VidMode = GLFWvidmode
+    public typealias VidMode = GLFWvidmode
 
     /*  @brief Gamma ramp.
      *
@@ -1036,7 +1036,7 @@ public struct glfw {
      *
      *  @ingroup monitor
      */
-    typealias GammaRamp = GLFWgammaramp
+    public typealias GammaRamp = GLFWgammaramp
 
     /*  @brief Image data.
      *
@@ -1046,7 +1046,7 @@ public struct glfw {
      *  @since Added in version 2.1.
      *  @glfw3 Removed format and bytes-per-pixel members.
      */
-    typealias Image = GLFWimage
+    public typealias Image = GLFWimage
 
 
     /*************************************************************************
@@ -1085,7 +1085,7 @@ public struct glfw {
      *
      *  @ingroup init
      */
-    static func initialize() -> Bool {
+    public static func initialize() -> Bool {
         glfwInit().asBool
     }
 
@@ -1119,7 +1119,7 @@ public struct glfw {
      *
      *  @ingroup init
      */
-    static func terminate() {
+    public static func terminate() {
         glfwTerminate()
     }
 
@@ -1148,7 +1148,7 @@ public struct glfw {
      *
      *  @ingroup init
      */
-    static var version: (major: Int32, minor: Int32, rev: Int32) {
+    public static var version: (major: Int32, minor: Int32, rev: Int32) {
         get {
             var res = (0 as Int32, 0 as Int32, 0 as Int32)
             glfwGetVersion(&res.0, &res.1, &res.2)
@@ -1174,7 +1174,7 @@ public struct glfw {
      *
      *  @remark This function may be called before @ref glfwInit.
      *
-     *  @pointer_lifetime The returned string is static and compile-time generated.
+     *  @pointer_lifetime The returned string is public static and compile-time generated.
      *
      *  @thread_safety This function may be called from any thread.
      *
@@ -1185,7 +1185,7 @@ public struct glfw {
      *
      *  @ingroup init
      */
-    static var versionString: String {
+    public static var versionString: String {
         glfwGetVersionString().asString
     }
 
@@ -1221,14 +1221,14 @@ public struct glfw {
      *
      *  @ingroup init
      */
-    static func setErrorCallback(cbFun: @escaping ErrorFun) {
+    public static func setErrorCallback(cbFun: @escaping ErrorFun) {
         glfw.errorCB = cbFun
         glfwSetErrorCallback { err, desc in
             glfw.errorCB!(Error(rawValue: err)!, String(utf8String: desc!)!)
         }
     }
 
-    static var errorCB: ErrorFun?
+    public static var errorCB: ErrorFun?
 
     /*  @brief Returns the currently connected monitors.
      *
@@ -1257,7 +1257,7 @@ public struct glfw {
      *
      *  @ingroup monitor
      */
-    static var monitors: [Monitor] {
+    public static var monitors: [Monitor] {
         var count: Int32 = 0
         let monitors = glfwGetMonitors(&count)!
         var res: [Monitor] = []
@@ -1290,7 +1290,7 @@ public struct glfw {
      *
      *  @ingroup monitor
      */
-    static var primaryMonitor: Monitor {
+    public static var primaryMonitor: Monitor {
         glfwGetPrimaryMonitor() as Monitor
     }
 
@@ -1312,7 +1312,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    static func defaultWindowHints() {
+    public static func defaultWindowHints() {
         glfwDefaultWindowHints()
     }
 
@@ -1331,7 +1331,7 @@ public struct glfw {
      *  @param[in] value The new value of the window hint.
      *
      *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED and @ref
-     *  GLFW_INVALID_ENUM.
+     *  GLFW_INVALID_public enum.
      *
      *  @thread_safety This function must only be called from the main thread.
      *
@@ -1379,7 +1379,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    static func pollEvents() {
+    public static func pollEvents() {
         glfwPollEvents()
     }
 
@@ -1426,7 +1426,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    static func waitEvents() {
+    public static func waitEvents() {
         glfwWaitEvents()
     }
 
@@ -1474,7 +1474,7 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    static func waitEventsTimeout(timeout: Double) {
+    public static func waitEventsTimeout(timeout: Double) {
         glfwWaitEventsTimeout(timeout)
     }
 
@@ -1500,11 +1500,11 @@ public struct glfw {
      *
      *  @ingroup window
      */
-    static func postEmptyEvent() {
+    public static func postEmptyEvent() {
         glfwPostEmptyEvent()
     }
 
-    static func getKeyName(scancode: Int32) -> String {
+    public static func getKeyName(scancode: Int32) -> String {
         String(cString: glfwGetKeyName(Key.unknown.rawValue, scancode))
     }
 
@@ -1546,7 +1546,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    static func createCursor(image: Image, hot: ivec2) -> Cursor {
+    public static func createCursor(image: Image, hot: ivec2) -> Cursor {
         var i = image
         return glfwCreateCursor(&i, hot.x, hot.y)
     }
@@ -1561,7 +1561,7 @@ public struct glfw {
      *  [error](@ref error_handling) occurred.
      *
      *  @errors Possible errors include @ref GLFW_NOT_INITIALIZED, @ref
-     *  GLFW_INVALID_ENUM and @ref GLFW_PLATFORM_ERROR.
+     *  GLFW_INVALID_public enum and @ref GLFW_PLATFORM_ERROR.
      *
      *  @reentrancy This function must not be called from a callback.
      *
@@ -1574,7 +1574,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    static func createStandardCursor(shape: CursorShape) -> Cursor {
+    public static func createStandardCursor(shape: CursorShape) -> Cursor {
         glfwCreateStandardCursor(shape.rawValue)
     }
 
@@ -1600,7 +1600,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    static func destroyCursor(cursor: Cursor) {
+    public static func destroyCursor(cursor: Cursor) {
         glfwDestroyCursor(cursor)
     }
 
@@ -1625,16 +1625,16 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    static func setJoystickCallback(cbfun: @escaping JoystickFun) {
+    public static func setJoystickCallback(cbfun: @escaping JoystickFun) {
         glfw.joystickCB = cbfun
         glfwSetJoystickCallback { joystick, connected in
             glfw.joystickCB!(Joystick(rawValue: joystick)!, connected == GLFW_CONNECTED)
         }
     }
 
-    static var joystickCB: JoystickFun?
+    public static var joystickCB: JoystickFun?
 
-    static var time: Double {
+    public static var time: Double {
         /*  @brief Returns the value of the GLFW timer.
          *
          *  This function returns the value of the GLFW timer.  Unless the timer has
@@ -1713,7 +1713,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    static var timerValue: UInt64 {
+    public static var timerValue: UInt64 {
         glfwGetTimerValue()
     }
 
@@ -1735,7 +1735,7 @@ public struct glfw {
      *
      *  @ingroup input
      */
-    static var timerFrequency: UInt64 {
+    public static var timerFrequency: UInt64 {
         glfwGetTimerFrequency()
     }
 
@@ -1758,7 +1758,7 @@ public struct glfw {
      *
      *  @ingroup context
      */
-    static var currentContext: Window {
+    public static var currentContext: Window {
         glfwGetCurrentContext()
     }
 
@@ -1807,7 +1807,7 @@ public struct glfw {
      *
      *  @ingroup context
      */
-    static func swapInterval(_ interval: Int32) {
+    public static func swapInterval(_ interval: Int32) {
         glfwSwapInterval(interval)
     }
 
@@ -1827,8 +1827,8 @@ public struct glfw {
      *  a context, so there is no danger in doing this.
      *
      *  This function does not apply to Vulkan.  If you are using Vulkan, see @ref
-     *  glfwGetRequiredInstanceExtensions, `vkEnumerateInstanceExtensionProperties`
-     *  and `vkEnumerateDeviceExtensionProperties` instead.
+     *  glfwGetRequiredInstanceExtensions, `vkpublic enumerateInstanceExtensionProperties`
+     *  and `vkpublic enumerateDeviceExtensionProperties` instead.
      *
      *  @param[in] extension The ASCII encoded name of the extension.
      *  @return `GLFW_TRUE` if the extension is available, or `GLFW_FALSE`
@@ -1986,8 +1986,8 @@ public struct glfw {
  *  return any function exported from the Vulkan loader, including at least the
  *  following functions:
  *
- *  - `vkEnumerateInstanceExtensionProperties`
- *  - `vkEnumerateInstanceLayerProperties`
+ *  - `vkpublic enumerateInstanceExtensionProperties`
+ *  - `vkpublic enumerateInstanceLayerProperties`
  *  - `vkCreateInstance`
  *  - `vkGetInstanceProcAddr`
  *
